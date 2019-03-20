@@ -13,7 +13,7 @@ app.use(serveStatic(path.join(__dirname, 'build/contracts')))
 
 // Example file: https://www.figma.com/file/RuXvVnnTvSIkccoz1ANOvEJE/Emojis
 
-const figmaApiKey = "<your Figma API token here"
+const figmaApiKey = "<9962-ea84b994-034e-4995-b911-6a1ea836d5de"
 
 app.use('/get_images', async function(req, res, next) {
   let result = await getImagesFromFigma(req.query.figmaId)
